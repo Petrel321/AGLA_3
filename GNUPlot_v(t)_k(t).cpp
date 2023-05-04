@@ -29,7 +29,7 @@ int main() {
         K = round(K*100) / 100;
         triple.push_back({t, V, K});
     }
-    fprintf(pipe, "plot [0 : 80] '-' using 1:2 title 'victim' with lines, '-' using 1:2 title 'predator' with lines\n");
+    fprintf(pipe, "plot [0 : 80] '-' using 1:2 title 'v(t)' with lines, '-' using 1:2 title 'k(t)' with lines\n");
     for (int i = 0; i < N; ++i) {
         fprintf(pipe, "%f\t%f\n", triple[i].time, triple[i].victims);
     }
